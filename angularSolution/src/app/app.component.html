@@ -4,3 +4,13 @@
 <input type="text" [(ngModel)]="username">
 <button (click)="reset()">reset</button>
 <button (click)="log()">log</button>
+
+<hr />
+
+<p *ngFor="let fruit of fruits" >{{fruit.name}} ({{fruit.color}})</p>
+
+<section>
+  <button (click)="isShown = !isShown">Toggle</button>
+  <div *ngIf="isShown">Haho</div>
+  <div *ngIf="!isShown">Secret</div>
+</section>

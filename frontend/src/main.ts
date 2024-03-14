@@ -20,5 +20,17 @@ const postDemo = async () => {
   console.log(response.data)
 }
 
+
+const fruits = [
+  { name: "alma", color: "piros" },
+  { name: "korte", color: "barna" },
+  { name: "narancs", color: "narancssarga" },
+  { name: "cseresznye", color: "piros" },
+]
+
+document.getElementById("akarmi")?.innerHTML = fruits.map(fruit => `<p>${fruit.name}</p>`).join("")
+
+
+
 getButton.addEventListener("click", getDemo)
 postButton.addEventListener("click", postDemo)

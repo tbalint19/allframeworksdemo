@@ -9,6 +9,15 @@ export class AppComponent {
   title = 'Angular (from variable)';
   username = ""
 
+  isShown = false
+
+  fruits = [
+    { name: "alma", color: "piros" },
+    { name: "korte", color: "barna" },
+    { name: "narancs", color: "narancssarga" },
+    { name: "cseresznye", color: "piros" },
+  ]
+
   reset() {
     this.username = ""
   }
